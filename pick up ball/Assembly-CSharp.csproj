@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ClearDirector.cs" />
     <Compile Include="Assets\GameDirector.cs" />
     <Compile Include="Assets\ItemController.cs" />
     <Compile Include="Assets\ItemGenerator.cs" />

@@ -38,8 +38,8 @@ public class GameDirector : MonoBehaviour
             this.time = 0;
             this.generator.GetComponent<ItemGenerator>().SetParameter(1000.0f,
                 0, 0);
-            SceneManager.LoadScene("Strat Scene");
-            
+            SceneManager.LoadScene("ClerScenes");
+           
         }
         else if (0 <= this.time && this.time < 5)
         {
