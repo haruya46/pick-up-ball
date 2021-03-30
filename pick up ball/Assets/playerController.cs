@@ -40,4 +40,5 @@ public class playerController : MonoBehaviour
     {
         transform.Translate(1, 0, 0);
     }
+
 }

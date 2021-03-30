@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameDirector : MonoBehaviour
 {
     GameObject timeText;
     GameObject pointText;
     float time = 30.0f;
-    int point = 0;
+    public int point = 0;
     GameObject generator;
     
     public void GetApple()
@@ -37,6 +38,8 @@ public class GameDirector : MonoBehaviour
             this.time = 0;
             this.generator.GetComponent<ItemGenerator>().SetParameter(1000.0f,
                 0, 0);
+            SceneManager.LoadScene("Strat Scene");
+            
         }
         else if (0 <= this.time && this.time < 5)
         {
@@ -65,4 +68,5 @@ public class GameDirector : MonoBehaviour
         this.pointText.GetComponent<Text>().text =
             this.point.ToString() + "point";
     }
+   
 }
