@@ -1,0 +1,12 @@
+@media all and (max-width : 670px){
+    .video{
+        width:100%;
+
+    }
+}
+body{
+    max-width: 1170px;
+}
+.video{
+    width: 100%;
+}
